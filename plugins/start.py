@@ -19,13 +19,10 @@ from database.database import add_user, remove_all, del_user, full_userbase, pre
 from plugins.trippy_xt import convert_time
 from database.database import total_click, add_click, top_users, set_fsub, get_fsub
 
-
-# Function to handle the start command
 @Bot.on_message(filters.command('start') & filters.private & subscribed1 & subscribed2 & subscribed3)
 async def start_command(client: Client, message: Message):
     user_id = message.from_user.id
 
-    # Check if the user is present in the database, if not add the user
     if not await present_user(user_id):
         try:
             await add_user(user_id)
@@ -83,7 +80,6 @@ async def start_command(client: Client, message: Message):
                     filename=msg.document.file_name
                 )
 
-            # Check if the message already has a reply_markup and if buttons are disabled
             if msg.reply_markup and DISABLE_CHANNEL_BUTTON:
                 reply_markup = None
             else:
@@ -122,7 +118,6 @@ async def start_command(client: Client, message: Message):
             asyncio.create_task(auto_del_notification(client, last_message, DEL_TIMER))
 
     else:
-        # Add a reply markup if the message text is not a command
         reply_markup = InlineKeyboardMarkup(
             [
                 [
