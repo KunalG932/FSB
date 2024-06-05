@@ -1,9 +1,3 @@
-#(©)CodeXBotz
-
-
-
-
-
 import os
 import asyncio
 import sys
