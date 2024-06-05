@@ -11,7 +11,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6710150455:AAGvnnF9rfRoJQnLw7SHOpLnpLwmHQqLguc")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7110768665:AAFv7mjWcZJV_id7K6aP8B5M0ITCcC0PWPY")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "26898723"))
@@ -20,7 +20,7 @@ APP_ID = int(os.environ.get("APP_ID", "26898723"))
 API_HASH = os.environ.get("API_HASH", "6b074d2c9ab42f363d22fa86284f3488")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002001799767"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002049101467"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "6358771146"))
@@ -34,8 +34,8 @@ JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DB_URI)
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot1")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001964726251"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001996064597"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002200597881"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002239628175"))
 
 REQ_CHANNEL = int(os.environ.get("REQ_CHANNEL", "0"))
 
@@ -46,7 +46,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first}\n\nI am a file store bot Powered by @Thekaizers ⚡</b>.")
 try:
     ADMINS=[6358771146]
-    for x in (os.environ.get("ADMINS", "6358771146").split()):
+    for x in (os.environ.get("ADMINS", "6239759268").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -74,7 +74,7 @@ DEL_MSG = "<b> File will be Auto Deleted in {time}, Forward to Saved Messages No
 
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(6358771146)
+ADMINS.append(6239759268)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
