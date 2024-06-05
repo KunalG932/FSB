@@ -23,7 +23,7 @@ API_HASH = os.environ.get("API_HASH", "6b074d2c9ab42f363d22fa86284f3488")
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002049101467"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6358771146"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6239759268"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -45,7 +45,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first}\n\nI am a file store bot Powered by @Thekaizers ⚡</b>.")
 try:
-    ADMINS=[6358771146]
+    ADMINS=[6239759268]
     for x in (os.environ.get("ADMINS", "6239759268").split()):
         ADMINS.append(int(x))
 except ValueError:
