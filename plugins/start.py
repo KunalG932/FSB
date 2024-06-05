@@ -132,7 +132,7 @@ REPLY_ERROR = """<code>Use this command as a reply to any telegram message with 
 #=====================================================================================##
 
 @Bot.on_message(filters.command('start') & filters.private)
-async def not_joined(client: Client, message: Message):
+async def not_joined(client: Bot, message: Message):
     buttons = [
         [
             InlineKeyboardButton(text="Join Channel", url=client.invitelink),
