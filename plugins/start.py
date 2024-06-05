@@ -13,7 +13,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 from pyrogram.errors import FloodWait, UserIsBlocked, InputUserDeactivated, UserNotParticipant
 
 from bot import Bot
-from config import ADMINS, OWNER_ID, FORCE_MSG, START_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, PROTECT_CONTENT, DEL_TIMER, AUTO_DEL, DEL_MSG
+from config import ADMINS, OWNER_ID, FORCE_MSG, START_MSG, CUSTOM_CAPTION, DISABLE_CHANNEL_BUTTON, PROTECT_CONTENT, DEL_TIMER, AUTO_DEL, DEL_MSG, USER_REPLY_TEXT
 from helper_func import subscribed1, subscribed3, subscribed2, encode, decode, get_messages
 from database.database import add_user, remove_all, del_user, full_userbase, present_user, is_admin
 from plugins.trippy_xt import convert_time
